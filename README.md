@@ -1,82 +1,123 @@
 # Arduino Sensor Reference
 
-A comprehensive, organized reference for Arduino-compatible sensor tutorials, wiring diagrams, and code snippets. Built for Arduino, ESP32, and ESP8266 — with datasheet summaries and clear initialization steps to streamline your IoT and embedded systems projects.
+A comprehensive, organized reference for embedded systems and IoT — covering microcontrollers, sensors, communication protocols, and progressively harder projects, built on Arduino, ESP32, ESP8266, and STM32.
 
-![Platform](https://img.shields.io/badge/platform-Arduino%20%7C%20ESP32%20%7C%20ESP8266-00979D)
+![Platform](https://img.shields.io/badge/platform-Arduino%20%7C%20ESP32%20%7C%20ESP8266%20%7C%20STM32-00979D)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-actively%20growing-brightgreen)
 ![PRs](https://img.shields.io/badge/contributions-welcome-orange)
 
-> 🌱 This repository is updated regularly as new boards and sensors are added, tested, and documented. Star ⭐ it to keep track of new additions.
+> 🌱 Updated regularly as new boards, sensors, and projects are added and tested. Star ⭐ to keep track.
 
 ---
 
-## 📖 What's Inside
+## Learning Path
 
-This repo is built for **beginners and hobbyists** who want working, tested code instead of digging through forums. Every sensor entry includes wiring instructions, required libraries, and a working sketch — not just raw code.
+```
+Arduino Basics → DHT11 → HC-SR04 → OLED → MPU6050 → ESP32 WiFi → MQTT → IoT Projects
+```
 
-| Folder | What you'll find |
-|---|---|
-| [`docs/`](docs/) | Arduino IDE setup, board manager config, library installation guide, troubleshooting |
-| [`01-microcontrollers/`](01-microcontrollers/) | Board-specific basics — pinouts, specs, and Blink LED test sketches for every board |
-| [`02-sensors/`](02-sensors/) | Sensor-by-sensor folders with wiring diagrams, datasheets, and code for multiple boards |
-| [`03-libraries-reference/`](03-libraries-reference/) | Master list of every Arduino library used in this repo, with install instructions |
-| [`04-projects/`](04-projects/) | Combined multi-sensor projects built using the code above |
+This repo is structured so each stage builds on the last — see **[Roadmap.md](Roadmap.md)** for the full staged path with checkboxes.
 
 ---
 
-## 🚀 New Here? Start in This Order
-
-1. **[Install the Arduino IDE & set up your board](docs/getting-started.md)** — covers IDE download, board manager URLs for ESP32/ESP8266, and driver installation
-2. **[Learn how to install libraries](docs/library-installation-guide.md)** — Library Manager vs. manual `.zip` installs
-3. **Pick your microcontroller** in [`01-microcontrollers/`](01-microcontrollers/) and run the Blink LED test to confirm your IDE, board, and drivers are working
-4. **Pick a sensor** in [`02-sensors/`](02-sensors/) and wire it up using the README in that sensor's folder
-5. Stuck? Check **[troubleshooting.md](docs/troubleshooting.md)**
-
----
-
-## 🔌 Supported Microcontrollers
-
-| Board | Status | Onboard LED Pin |
-|---|---|---|
-| Arduino Uno | ✅ Tested | 13 |
-| Arduino Nano | ✅ Tested | 13 |
-| Arduino Mega 2560 | ✅ Tested | 13 |
-| ESP32 (DevKit) | ✅ Tested | 2 (varies by board) |
-| ESP8266 / NodeMCU | ✅ Tested | 2 (D4, active LOW) |
-
-*(List grows as new boards are added — see [`01-microcontrollers/`](01-microcontrollers/) for full details and comparison table.)*
-
-## 🌡️ Supported Sensors
-
-| Sensor | Type | Tested On | Folder |
-|---|---|---|---|
-| *(coming soon)* | | | |
-
-*(This table is updated every time a new sensor is added. Full index lives in [`02-sensors/README.md`](02-sensors/README.md).)*
-
----
-
-## 🗂 Repository Structure
+## Repository Structure
 
 ```
 arduino-sensor-reference/
-├── docs/                       Setup guides, library install, troubleshooting
-├── 01-microcontrollers/        Board basics + Blink LED per board
-├── 02-sensors/                 Sensor wiring, datasheets, and code per board
-├── 03-libraries-reference/     Index of all libraries used across this repo
-└── 04-projects/                Multi-sensor combined builds
+│
+├── README.md
+├── Roadmap.md                  Staged learning path, beginner → advanced
+│
+├── Sensors/                    Sensor-by-sensor: wiring, datasheets, working code
+│   ├── Temperature/
+│   ├── Distance/
+│   ├── Motion/
+│   ├── Light/
+│   ├── Gas/
+│   ├── IMU/
+│   ├── Pressure/
+│   ├── RFID/
+│   └── Display/
+│
+├── Microcontrollers/           Board-by-board: specs, pinouts, Blink LED tests
+│   ├── ATmega328P/             Arduino Uno, Nano, Mega
+│   ├── ESP32/
+│   ├── ESP8266/
+│   └── STM32/
+│
+├── Communication/               Protocol explainers: how sensors actually talk
+│   ├── UART/
+│   ├── I2C/
+│   ├── SPI/
+│   └── CAN/
+│
+├── Projects/                   Combined multi-sensor builds, by difficulty
+│   ├── Beginner/
+│   ├── Intermediate/
+│   └── Advanced/
+│
+├── Datasheets/                 Index + official manufacturer source links
+└── Libraries-Reference/         Every library used in this repo, in one table
 ```
 
 ---
 
-## 🤝 Contributing
+## Every Sensor Folder Follows the Same Pattern
 
-Found an issue or want to add a sensor? Open an [issue](../../issues) or pull request. Please follow the existing folder pattern (README + code + datasheet where applicable) so the repo stays consistent.
+```
+Sensor-Name/
+├── README.md          Description, pinout, working principle, formula, example
+├── Wiring.png           Wiring/breadboard diagram
+├── Example_Code.ino     Tested working sketch
+├── Datasheet.pdf         Official datasheet
+└── Notes.md              Calibration tips, gotchas, common mistakes
+```
 
-## 📄 License
+So once you've used one sensor folder, you already know how to navigate every other one.
 
-This project is licensed under the [MIT License](LICENSE) — free to use, modify, and share.
+---
+
+## New Here? Start in This Order
+
+1. **[Install the Arduino IDE & set up your board](docs/getting-started.md)** — IDE download, board manager URLs for ESP32/ESP8266, drivers
+2. **[Learn how to install libraries](docs/library-installation-guide.md)** — Library Manager vs. manual `.zip` installs
+3. **Pick your microcontroller** in [`Microcontrollers/`](Microcontrollers/) and run the Blink LED test
+4. **Follow [Roadmap.md](Roadmap.md)** stage by stage — basics → sensors → communication protocols → intermediate sensors → ESP32 → projects
+5. Stuck? Check **[docs/troubleshooting.md](docs/troubleshooting.md)**
+
+---
+
+## Supported Microcontrollers
+
+| Board | Family | Status | Onboard LED Pin |
+|---|---|---|---|
+| Arduino Uno | ATmega328P | ✅ Tested | 13 |
+| Arduino Nano | ATmega328P | ✅ Tested | 13 |
+| Arduino Mega 2560 | ATmega2560 | ✅ Tested | 13 |
+| ESP32 (DevKit) | Xtensa LX6 | ✅ Tested | 2 (varies by board) |
+| ESP8266 / NodeMCU | Tensilica L106 | ✅ Tested | 2 (D4, active LOW) |
+| STM32 | ARM Cortex-M | 🔜 Planned | — |
+
+Full comparison table: [`Microcontrollers/README.md`](Microcontrollers/README.md)
+
+## Sensors Covered So Far
+
+| Sensor | Category | Status |
+|---|---|---|
+| *(first sensor coming soon — see [Roadmap.md](Roadmap.md) for the planned order)* | | |
+
+Full index: [`Sensors/README.md`](Sensors/README.md)
+
+---
+
+## Contributing
+
+Found an issue or want to add a sensor? Open an [issue](../../issues) or pull request. Please follow the existing folder pattern so the repo stays consistent — see [`Sensors/README.md`](Sensors/README.md) for the standard layout.
+
+## License
+
+Licensed under the [MIT License](LICENSE) — free to use, modify, and share.
 
 ---
 

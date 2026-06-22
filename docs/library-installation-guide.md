@@ -10,7 +10,7 @@ This is the easiest and safest method — it handles dependencies automatically.
 
 1. Open Arduino IDE
 2. Go to **Sketch → Include Library → Manage Libraries...** (or click the library icon in the left sidebar)
-3. Type the library name in the search box (exact names are given in each sensor's README and in [`03-libraries-reference/`](../03-libraries-reference/README.md))
+3. Type the library name in the search box (exact names are given in each sensor's README and in [`Libraries-Reference/`](../Libraries-Reference/README.md))
 4. Click **Install** on the correct result — double-check the author name, since many sensors have multiple similarly-named libraries
 5. If prompted to install dependencies, click **Install All**
 
@@ -35,4 +35,4 @@ Go to **Sketch → Include Library** — your installed library should appear in
 
 ## Library Index
 
-A running list of every library used across this repo — which sensor/board it's for, and how to install it — is maintained in [`03-libraries-reference/README.md`](../03-libraries-reference/README.md). Check there before installing anything manually; it may already be covered.
+A running list of every library used across this repo — which sensor/board it's for, and how to install it — is maintained in [`Libraries-Reference/README.md`](../Libraries-Reference/README.md). Check there before installing anything manually; it may already be covered.

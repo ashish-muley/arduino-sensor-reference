@@ -63,7 +63,7 @@ Every time you switch boards:
 
 ## 5. Run Your First Test
 
-Go to [`01-microcontrollers/`](../01-microcontrollers/), open the folder matching your board, and upload the **Blink LED** sketch inside. If the onboard LED blinks, your IDE + drivers + board selection are all correct — you're ready to move on to sensors.
+Go to [`Microcontrollers/`](../Microcontrollers/), open the folder matching your board, and upload the **Blink LED** sketch inside its `Examples/` folder. If the onboard LED blinks, your IDE + drivers + board selection are all correct — you're ready to move on to sensors.
 
 ---
 
