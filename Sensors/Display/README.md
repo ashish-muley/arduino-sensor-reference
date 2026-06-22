@@ -1,5 +1,9 @@
-# Display Sensors
+# Display Modules
 
-*Planned sensors for this category: SSD1306 OLED.*
+Screens for showing sensor data.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Module | Type | Interface | Difficulty | Folder |
+|---|---|---|---|---|
+| SSD1306 OLED | OLED 128×64 | I²C | Intermediate | [SSD1306-OLED/](SSD1306-OLED/) |
+
+**E-Paper / e-Ink** displays are documented in [Component-Reference](../../Component-Reference/README.md).

@@ -1,5 +1,9 @@
 # Motion Sensors
 
-*Planned sensors for this category: PIR motion sensor.*
+Sensors that detect movement and presence.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Sensor | Tech | Difficulty | Folder |
+|---|---|---|---|
+| PIR (HC-SR501) | Passive infrared | Beginner | [PIR-HC-SR501/](PIR-HC-SR501/) |
+
+**Other motion tech** (microwave radar RCWL-0516, IMU-based motion) is in [Component-Reference](../../Component-Reference/README.md).

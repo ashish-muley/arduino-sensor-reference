@@ -1,5 +1,9 @@
-# IMU Sensors
+# IMU Sensors (Inertial Measurement Units)
 
-*Planned sensors for this category: MPU6050 (accelerometer + gyroscope).*
+Accelerometers, gyroscopes, and orientation sensors.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Sensor | DOF | Interface | Difficulty | Folder |
+|---|---|---|---|---|
+| MPU6050 | 6 (accel + gyro) | I²C | Intermediate | [MPU6050/](MPU6050/) |
+
+**More IMUs** (ADXL345, BNO055 9-DOF with onboard fusion) are documented in [Component-Reference](../../Component-Reference/README.md).

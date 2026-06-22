@@ -1,5 +1,9 @@
 # Pressure Sensors
 
-*Planned sensors for this category: BMP280.*
+Barometric pressure and altitude sensors.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Sensor | Measures | Interface | Difficulty | Folder |
+|---|---|---|---|---|
+| BMP280 | Pressure + temperature | I²C/SPI | Intermediate | [BMP280/](BMP280/) |
+
+**Note:** BMP280 has no humidity; the BME280 adds it. Industrial pressure transmitters (Danfoss MBS) are in [Component-Reference](../../Component-Reference/README.md).

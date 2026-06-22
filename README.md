@@ -57,6 +57,8 @@ arduino-sensor-reference/
 │   ├── Intermediate/
 │   └── Advanced/
 │
+├── Component-Reference/         Catalog of ~40 advanced & industrial parts
+│                                 (ECG, ToF, LIDAR, 9-DOF IMU, compute boards...)
 ├── Datasheets/                 Index + official manufacturer source links
 └── Libraries-Reference/         Every library used in this repo, in one table
 ```
@@ -103,11 +105,24 @@ Full comparison table: [`Microcontrollers/README.md`](Microcontrollers/README.md
 
 ## Sensors Covered So Far
 
-| Sensor | Category | Status |
-|---|---|---|
-| *(first sensor coming soon — see [Roadmap.md](Roadmap.md) for the planned order)* | | |
+| Sensor | Category | Interface | Status |
+|---|---|---|---|
+| [LM35](Sensors/Temperature/LM35/) | Temperature | Analog | 📝 Reference |
+| [DHT11](Sensors/Temperature/DHT11/) | Temperature | Digital | 📝 Reference |
+| [DHT22](Sensors/Temperature/DHT22/) | Temperature | Digital | 📝 Reference |
+| [DS18B20](Sensors/Temperature/DS18B20/) | Temperature | 1-Wire | 📝 Reference |
+| [HC-SR04](Sensors/Distance/HC-SR04/) | Distance | Ultrasonic | 📝 Reference |
+| [PIR (HC-SR501)](Sensors/Motion/PIR-HC-SR501/) | Motion | Digital | 📝 Reference |
+| [LDR](Sensors/Light/LDR/) | Light | Analog | 📝 Reference |
+| [MQ-2](Sensors/Gas/MQ-2/) | Gas | Analog | 📝 Reference |
+| [MPU6050](Sensors/IMU/MPU6050/) | IMU | I²C | 📝 Reference |
+| [BMP280](Sensors/Pressure/BMP280/) | Pressure | I²C | 📝 Reference |
+| [RC522](Sensors/RFID/RC522/) | RFID | SPI | 📝 Reference |
+| [SSD1306 OLED](Sensors/Display/SSD1306-OLED/) | Display | I²C | 📝 Reference |
 
-Full index: [`Sensors/README.md`](Sensors/README.md)
+> 📝 **Reference** = code written from manufacturer datasheets and standard libraries, with full wiring and notes — but not yet bench-tested here. Boards above are ✅ Tested because they were verified on hardware.
+
+Full index: [`Sensors/README.md`](Sensors/README.md) · ~40 advanced/industrial parts cataloged in [`Component-Reference/`](Component-Reference/README.md)
 
 ---
 

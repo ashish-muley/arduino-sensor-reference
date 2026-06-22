@@ -1,5 +1,9 @@
 # Distance Sensors
 
-*Planned sensors for this category: HC-SR04.*
+Sensors for measuring distance and proximity.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Sensor | Tech | Range | Difficulty | Folder |
+|---|---|---|---|---|
+| HC-SR04 | Ultrasonic | 2–400 cm | Beginner | [HC-SR04/](HC-SR04/) |
+
+**Advanced ranging** (VL53L1X optical ToF, RPLIDAR, Sharp IR) is documented in [Component-Reference](../../Component-Reference/README.md).

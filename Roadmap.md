@@ -4,6 +4,8 @@ A staged learning path through this repo — from absolute basics to IoT-connect
 
 > Recommended path: **Arduino Basics → DHT11 → HC-SR04 → OLED → MPU6050 → ESP32 WiFi → MQTT → IoT Projects**
 
+> 📚 Beyond this path, [Component-Reference](Component-Reference/README.md) catalogs ~40 advanced & industrial parts (ECG, pulse oximetry, 9-DOF IMUs, optical ToF, LIDAR, current/force sensors, compute boards) with specs and datasheets.
+
 ---
 
 ## Stage 1: Arduino Basics
@@ -31,25 +33,25 @@ Examples:
 Start with these — they're cheap, easy to find, and forgiving to wire wrong.
 
 ### Light Sensor
-- [ ] LDR
+- [x] [LDR](Sensors/Light/LDR/)
 - [ ] Analog reading
 - [ ] Voltage divider concept
 
 Learn: analog values, calibration
 
 ### Temperature Sensor
-- [ ] LM35
-- [ ] DHT11
+- [x] [LM35](Sensors/Temperature/LM35/)
+- [x] [DHT11](Sensors/Temperature/DHT11/)
 
 Learn: analog-to-temperature conversion, libraries
 
 ### Distance Sensor
-- [ ] HC-SR04
+- [x] [HC-SR04](Sensors/Distance/HC-SR04/)
 
 Learn: pulse timing, speed-of-sound calculation
 
 ### Motion Sensor
-- [ ] PIR Sensor
+- [x] [PIR (HC-SR501)](Sensors/Motion/PIR-HC-SR501/)
 
 Learn: digital inputs, event detection
 
@@ -112,16 +114,16 @@ After Arduino Uno fundamentals are solid.
 
 ## First 10 Sensors/Modules (suggested order)
 
-1. [ ] DHT11
-2. [ ] HC-SR04
-3. [ ] LDR Module
-4. [ ] PIR Motion Sensor
-5. [ ] LM35
-6. [ ] BMP280
-7. [ ] MPU6050
-8. [ ] RC522 RFID Module
-9. [ ] MQ-2 Gas Sensor
-10. [ ] OLED SSD1306 Display
+1. [x] [DHT11](Sensors/Temperature/DHT11/)
+2. [x] [HC-SR04](Sensors/Distance/HC-SR04/)
+3. [x] [LDR](Sensors/Light/LDR/)
+4. [x] [PIR (HC-SR501)](Sensors/Motion/PIR-HC-SR501/)
+5. [x] [LM35](Sensors/Temperature/LM35/)
+6. [x] [BMP280](Sensors/Pressure/BMP280/)
+7. [x] [MPU6050](Sensors/IMU/MPU6050/)
+8. [x] [RC522 RFID](Sensors/RFID/RC522/)
+9. [x] [MQ-2](Sensors/Gas/MQ-2/)
+10. [x] [SSD1306 OLED](Sensors/Display/SSD1306-OLED/)
 
 ---
 

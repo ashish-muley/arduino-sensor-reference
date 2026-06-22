@@ -1,5 +1,10 @@
 # Gas Sensors
 
-*Planned sensors for this category: MQ-2.*
+Sensors that detect gases, smoke, and air quality.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Sensor | Detects | Output | Difficulty | Folder |
+|---|---|---|---|---|
+| MQ-2 | LPG, methane, smoke, H₂ | Analog + digital | Beginner | [MQ-2/](MQ-2/) |
+
+**True CO₂ / VOC sensing** (SCD41 NDIR, BME680) is documented in [Component-Reference](../../Component-Reference/README.md).
+The MQ family (MQ-135, MQ-7, MQ-3, etc.) wires the same way as the MQ-2.

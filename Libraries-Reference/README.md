@@ -1,19 +1,38 @@
 # Libraries Reference
 
-A running index of every Arduino library used across this repository — exact name to search for, what it's for, and how to install it. Cross-check here before manually downloading anything; most are available directly through the Library Manager.
+Every Arduino library used across this repository — the exact name to search for in Library Manager, the author (to disambiguate similar names), what it's for, and how to install it.
+
+See [docs/library-installation-guide.md](../docs/library-installation-guide.md) for step-by-step install instructions. Most install via **Sketch → Include Library → Manage Libraries**.
 
 ## Index
 
-| Library Name (search exactly this) | Author | Used For | Install Method |
+| Library (search exactly) | Author | Used By | Install |
 |---|---|---|---|
-| *(none yet — populated as sensors are added)* | | | |
+| DHT sensor library | Adafruit | DHT11, DHT22 | Library Manager |
+| Adafruit Unified Sensor | Adafruit | DHT11/22, MPU6050, BMP280 (dependency) | Library Manager |
+| OneWire | Paul Stoffregen | DS18B20 | Library Manager |
+| DallasTemperature | Miles Burton | DS18B20 | Library Manager |
+| Adafruit MPU6050 | Adafruit | MPU6050 | Library Manager |
+| Adafruit BusIO | Adafruit | MPU6050, BMP280, SSD1306 (dependency) | Library Manager |
+| Adafruit BMP280 Library | Adafruit | BMP280 | Library Manager |
+| MFRC522 | GithubCommunity (miguelbalboa) | RC522 RFID | Library Manager |
+| Adafruit SSD1306 | Adafruit | SSD1306 OLED | Library Manager |
+| Adafruit GFX Library | Adafruit | SSD1306 OLED | Library Manager |
 
-## How Libraries Get Added Here
+## Sensors That Need No Library
 
-Every time a new sensor is added to [`Sensors/`](../Sensors/), any library it needs is logged in this table with:
-- The **exact name** to type into Library Manager search (names can be ambiguous — multiple libraries share similar names)
-- The **author**, since this disambiguates near-identical library names
-- A short note on what it's used for
-- Whether it installs via Library Manager or requires a manual `.zip` (rare)
+These use only built-in Arduino functions (`analogRead`, `digitalRead`, `pulseIn`):
 
-See [docs/library-installation-guide.md](../docs/library-installation-guide.md) for step-by-step install instructions.
+| Sensor | Built-in function used |
+|---|---|
+| LM35 | `analogRead()` |
+| LDR | `analogRead()` |
+| MQ-2 | `analogRead()` + `digitalRead()` |
+| HC-SR04 | `pulseIn()` |
+| PIR (HC-SR501) | `digitalRead()` |
+
+## Dependency Note
+
+The Adafruit driver libraries (MPU6050, BMP280, SSD1306) all depend on **Adafruit Unified Sensor** and/or **Adafruit BusIO**. When you install the main library, the IDE usually prompts to install these too — click **Install All**. If a sketch fails to compile with a missing-header error, installing these dependencies manually is the fix.
+
+*Updated whenever a new sensor is added.*

@@ -1,5 +1,9 @@
 # Light Sensors
 
-*Planned sensors for this category: LDR module.*
+Sensors that respond to light intensity.
 
-No sensors documented yet in this category. Each sensor will get its own subfolder here following the standard pattern (README, Wiring.png, Example_Code.ino, Datasheet.pdf, Notes.md) — see [../README.md](../README.md) for the full pattern and [../../Roadmap.md](../../Roadmap.md) for the planned order.
+| Sensor | Tech | Output | Difficulty | Folder |
+|---|---|---|---|---|
+| LDR | Photoresistor | Analog (divider) | Beginner | [LDR/](LDR/) |
+
+**Color/spectral sensing** (TCS34725, TCS3200) is documented in [Component-Reference](../../Component-Reference/README.md).
