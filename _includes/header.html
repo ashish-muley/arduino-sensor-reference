@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">⊞</span>
+      <span class="brand-text">Arduino Sensor Reference</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav">
+      <a href="{{ '/Sensors/' | relative_url }}">Sensors</a>
+      <a href="{{ '/Microcontrollers/' | relative_url }}">Boards</a>
+      <a href="{{ '/Communication/' | relative_url }}">Protocols</a>
+      <a href="{{ '/Roadmap.html' | relative_url }}">Roadmap</a>
+      <a href="{{ '/Component-Reference/' | relative_url }}">Components</a>
+      <a class="nav-cta" href="https://github.com/ashish-muley/arduino-sensor-reference" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>

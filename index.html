@@ -1,0 +1,196 @@
+---
+layout: home
+title: Home
+---
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow"><span class="dot"></span> Actively growing · Open source · MIT</span>
+    <h1>The friendly reference for <span class="accent">Arduino &amp; IoT</span> sensors</h1>
+    <p class="lead">Wiring diagrams, working code, datasheets, and a step-by-step learning path — for Arduino, ESP32 &amp; ESP8266. Built so even a complete beginner can go from a blinking LED to a connected IoT project.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="{{ '/Sensors/' | relative_url }}">Explore Sensors</a>
+      <a class="btn btn-ghost" href="{{ '/Roadmap.html' | relative_url }}">Start the Roadmap</a>
+      <a class="btn btn-ghost" href="https://github.com/ashish-muley/arduino-sensor-reference" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+
+    <div class="hero-path">
+      <span class="plabel">Learning path</span>
+      <span class="chip is-accent">Basics</span><span class="parrow">→</span>
+      <span class="chip">DHT11</span><span class="parrow">→</span>
+      <span class="chip">HC-SR04</span><span class="parrow">→</span>
+      <span class="chip">OLED</span><span class="parrow">→</span>
+      <span class="chip">MPU6050</span><span class="parrow">→</span>
+      <span class="chip">ESP32 WiFi</span><span class="parrow">→</span>
+      <span class="chip">MQTT</span><span class="parrow">→</span>
+      <span class="chip is-accent">IoT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section>
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><div class="num">12</div><div class="label">Sensors documented</div></div>
+      <div class="stat"><div class="num">5</div><div class="label">Microcontroller boards</div></div>
+      <div class="stat"><div class="num">4</div><div class="label">Communication protocols</div></div>
+      <div class="stat"><div class="num">40+</div><div class="label">Components referenced</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SENSORS ===== -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">Sensors</span>
+      <h2>Every sensor, the same clear format</h2>
+      <p>Each folder has a description, a connection table, the working principle, the formula, required libraries, and a ready-to-upload sketch. Click any sensor to open its page.</p>
+    </div>
+
+    <div class="grid cols-4">
+      <a class="card" href="{{ '/Sensors/Temperature/LM35/' | relative_url }}">
+        <div class="icon">🌡️</div><span class="badge">Temperature</span>
+        <h3>LM35</h3><p>Analog temperature sensor — 10 mV/°C, no library needed.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Temperature/DHT11/' | relative_url }}">
+        <div class="icon">💧</div><span class="badge">Temperature</span>
+        <h3>DHT11</h3><p>Cheap digital temp + humidity sensor, great for starting out.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Temperature/DHT22/' | relative_url }}">
+        <div class="icon">🌦️</div><span class="badge">Temperature</span>
+        <h3>DHT22</h3><p>Higher-accuracy temp + humidity over a single data wire.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Temperature/DS18B20/' | relative_url }}">
+        <div class="icon">🌡️</div><span class="badge">Temperature</span>
+        <h3>DS18B20</h3><p>1-Wire digital probe — waterproof, multiple on one pin.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Distance/HC-SR04/' | relative_url }}">
+        <div class="icon">📏</div><span class="badge">Distance</span>
+        <h3>HC-SR04</h3><p>Ultrasonic ranging, 2–400 cm, by timing a 40 kHz echo.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Motion/PIR-HC-SR501/' | relative_url }}">
+        <div class="icon">🚶</div><span class="badge">Motion</span>
+        <h3>PIR (HC-SR501)</h3><p>Passive infrared motion detection as a simple digital input.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Light/LDR/' | relative_url }}">
+        <div class="icon">💡</div><span class="badge">Light</span>
+        <h3>LDR</h3><p>Photoresistor — learn analog reads and the voltage divider.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Gas/MQ-2/' | relative_url }}">
+        <div class="icon">💨</div><span class="badge">Gas</span>
+        <h3>MQ-2</h3><p>Flammable gas &amp; smoke sensor with analog + threshold output.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/IMU/MPU6050/' | relative_url }}">
+        <div class="icon">🎯</div><span class="badge">IMU</span>
+        <h3>MPU6050</h3><p>6-axis accelerometer + gyroscope over I²C — your first IMU.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Pressure/BMP280/' | relative_url }}">
+        <div class="icon">⛰️</div><span class="badge">Pressure</span>
+        <h3>BMP280</h3><p>Barometric pressure + temperature, with altitude estimation.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/RFID/RC522/' | relative_url }}">
+        <div class="icon">💳</div><span class="badge">RFID</span>
+        <h3>RC522</h3><p>13.56 MHz RFID reader over SPI — read card UIDs.</p>
+        <span class="card-link">Open</span>
+      </a>
+      <a class="card" href="{{ '/Sensors/Display/SSD1306-OLED/' | relative_url }}">
+        <div class="icon">🖥️</div><span class="badge">Display</span>
+        <h3>SSD1306 OLED</h3><p>Crisp 128×64 I²C display for showing live sensor data.</p>
+        <span class="card-link">Open</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MICROCONTROLLERS ===== -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Microcontrollers</span>
+      <h2>Start with a board you have</h2>
+      <p>Specs, pinouts, IDE setup, and a tested Blink LED sketch for each board — including the quirks (ESP8266's active-LOW LED, ESP32's board-dependent LED pin).</p>
+    </div>
+    <div class="grid cols-3">
+      <a class="mini" href="{{ '/Microcontrollers/ATmega328P/Arduino-Uno/' | relative_url }}"><h3>Arduino Uno</h3><div class="meta">ATmega328P · 16 MHz · 5V</div><p>The default starting board for most projects.</p></a>
+      <a class="mini" href="{{ '/Microcontrollers/ATmega328P/Arduino-Nano/' | relative_url }}"><h3>Arduino Nano</h3><div class="meta">ATmega328P · 16 MHz · 5V</div><p>Same chip as the Uno, breadboard-friendly.</p></a>
+      <a class="mini" href="{{ '/Microcontrollers/ATmega328P/Arduino-Mega/' | relative_url }}"><h3>Arduino Mega 2560</h3><div class="meta">ATmega2560 · 16 MHz · 5V</div><p>Many I/O pins and extra serial ports.</p></a>
+      <a class="mini" href="{{ '/Microcontrollers/ESP32/' | relative_url }}"><h3>ESP32</h3><div class="meta">Xtensa LX6 · 240 MHz · 3.3V</div><p>Dual-core with Wi-Fi + Bluetooth.</p></a>
+      <a class="mini" href="{{ '/Microcontrollers/ESP8266/' | relative_url }}"><h3>ESP8266 / NodeMCU</h3><div class="meta">L106 · 80 MHz · 3.3V</div><p>Budget Wi-Fi board for IoT.</p></a>
+      <a class="mini" href="{{ '/Microcontrollers/STM32/' | relative_url }}"><h3>STM32</h3><div class="meta">ARM Cortex-M · 3.3V</div><p>Coming soon — ARM development boards.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROTOCOLS ===== -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Communication</span>
+      <h2>Understand how sensors actually talk</h2>
+      <p>The difference between copying a sketch and understanding it. Each protocol explains its wiring convention, key terms, and which sensors in this repo use it.</p>
+    </div>
+    <div class="grid cols-4">
+      <a class="mini" href="{{ '/Communication/UART/' | relative_url }}"><h3>UART</h3><div class="meta">TX · RX · baud</div><p>Serial Monitor, GPS, Bluetooth modules.</p></a>
+      <a class="mini" href="{{ '/Communication/I2C/' | relative_url }}"><h3>I²C</h3><div class="meta">SDA · SCL · address</div><p>OLED, MPU6050, BMP280 — shared 2-wire bus.</p></a>
+      <a class="mini" href="{{ '/Communication/SPI/' | relative_url }}"><h3>SPI</h3><div class="meta">MOSI · MISO · SCK · CS</div><p>RFID, SD cards, displays — fast 4-wire bus.</p></a>
+      <a class="mini" href="{{ '/Communication/CAN/' | relative_url }}"><h3>CAN</h3><div class="meta">CAN-H · CAN-L</div><p>Automotive &amp; industrial networking.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPONENT REFERENCE CALLOUT ===== -->
+<section>
+  <div class="container">
+    <div class="callout">
+      <div>
+        <h2>Going deeper? 40+ advanced &amp; industrial components</h2>
+        <p>ECG &amp; pulse oximetry front-ends, 9-DOF IMUs, optical Time-of-Flight, LIDAR, color and current sensors, real-time compute boards (Teensy, STM32, Pi 5), and e-Paper displays — each with specs and official datasheet links.</p>
+      </div>
+      <a class="btn btn-ghost" href="{{ '/Component-Reference/' | relative_url }}">Open the catalog</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">Projects</span>
+      <h2>Put the pieces together</h2>
+      <p>Combined builds organized by difficulty — from a night lamp to a full IoT home-automation dashboard.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card">
+        <div class="icon">🟢</div><span class="badge">Beginner</span>
+        <h3>Starter Builds</h3>
+        <p>Automatic Night Lamp · Temperature Monitor · Parking Distance Sensor · Motion Alarm.</p>
+        <a class="card-link" href="{{ '/Projects/' | relative_url }}">See projects</a>
+      </div>
+      <div class="card">
+        <div class="icon">🟡</div><span class="badge">Intermediate</span>
+        <h3>Combined Systems</h3>
+        <p>Smart Weather Station · RFID Attendance · Gesture Controlled Light.</p>
+        <a class="card-link" href="{{ '/Projects/' | relative_url }}">See projects</a>
+      </div>
+      <div class="card">
+        <div class="icon">🔴</div><span class="badge">Advanced</span>
+        <h3>IoT &amp; Industrial</h3>
+        <p>IoT Home Automation · Smart Irrigation · Vehicle Tracking · Monitoring Dashboard.</p>
+        <a class="card-link" href="{{ '/Projects/' | relative_url }}">See projects</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+title: Arduino Sensor Reference
+description: >-
+  A beginner-friendly reference for Arduino, ESP32 and ESP8266 — sensors,
+  microcontrollers, communication protocols, and projects, each with wiring,
+  working code, and datasheet links.
+author: ashish-muley
+
+# Project site lives at https://ashish-muley.github.io/arduino-sensor-reference/
+url: "https://ashish-muley.github.io"
+baseurl: "/arduino-sensor-reference"
+
+# Apply our custom theme layout to every page. GitHub Pages' default plugins
+# (jekyll-optional-front-matter + jekyll-readme-index + jekyll-default-layout)
+# render the existing README.md files as pages and use them as directory
+# indexes — so no README needs editing.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Files that should not appear on the website
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - LICENSE
+  - .github

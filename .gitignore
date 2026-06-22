@@ -19,3 +19,9 @@ Thumbs.db
 
 # Arduino IDE cache
 *.tmp
+
+# Jekyll / GitHub Pages build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/

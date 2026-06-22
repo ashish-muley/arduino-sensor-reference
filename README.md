@@ -2,6 +2,8 @@
 
 A comprehensive, organized reference for embedded systems and IoT — covering microcontrollers, sensors, communication protocols, and progressively harder projects, built on Arduino, ESP32, ESP8266, and STM32.
 
+### 🌐 **[View the live website →](https://ashish-muley.github.io/arduino-sensor-reference/)**
+
 ![Platform](https://img.shields.io/badge/platform-Arduino%20%7C%20ESP32%20%7C%20ESP8266%20%7C%20STM32-00979D)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-actively%20growing-brightgreen)
