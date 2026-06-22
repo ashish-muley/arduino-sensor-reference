@@ -247,3 +247,65 @@ section.alt { background: var(--bg-alt); border-top: 1px solid var(--border); bo
   .footer-inner { grid-template-columns: 1fr; }
   .callout { padding: 28px; }
 }
+
+/* ===== Anchor offset (sticky header) ===== */
+section[id] { scroll-margin-top: 76px; }
+
+/* ===== Charts section ===== */
+.charts-grid { display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 18px; align-items: stretch; }
+.chart-card {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+}
+.chart-card h3 { margin: 0 0 2px; font-size: 1rem; font-weight: 700; }
+.chart-card .chart-sub { color: var(--muted); font-size: .82rem; margin: 0 0 14px; }
+
+.donut-row { display: flex; align-items: center; gap: 20px; flex: 1; }
+.donut-svg { flex-shrink: 0; }
+.donut-center-num { font-size: 1.5rem; font-weight: 800; fill: var(--text); }
+.donut-center-label { font-size: .54rem; fill: var(--muted); font-weight: 600; letter-spacing: .03em; }
+
+.legend { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+.legend li { display: flex; align-items: center; gap: 9px; font-size: .86rem; color: var(--text-soft); }
+.legend .dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+.legend .lname { flex: 1; color: var(--text); font-weight: 500; }
+.legend .lval { font-family: var(--mono); font-weight: 600; color: var(--text-soft); font-size: .8rem; }
+
+.barlist { display: flex; flex-direction: column; gap: 16px; flex: 1; justify-content: center; }
+.barlist-row .barlist-top { display: flex; justify-content: space-between; font-size: .86rem; margin-bottom: 6px; }
+.barlist-row .barlist-top .bname { font-weight: 600; color: var(--text); }
+.barlist-row .barlist-top .bval { font-family: var(--mono); color: var(--accent-ink); font-weight: 700; }
+.barlist-track { height: 10px; background: var(--bg-alt); border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+.barlist-fill { height: 100%; border-radius: 6px; background: linear-gradient(90deg, var(--accent), var(--accent-bright)); }
+
+/* ===== Roadmap strip ===== */
+.roadmap-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; position: relative; }
+.roadmap-step {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 18px 16px; box-shadow: var(--shadow-sm); position: relative;
+}
+.roadmap-step .step-num {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: .8rem; font-weight: 700;
+  margin-bottom: 10px;
+}
+.roadmap-step h4 { margin: 0 0 6px; font-size: .92rem; font-weight: 700; }
+.roadmap-step p { margin: 0; font-size: .8rem; color: var(--text-soft); line-height: 1.5; }
+
+/* ===== Mini stat pill (used in Projects section) ===== */
+.pill-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.pill {
+  font-size: .78rem; font-weight: 600; padding: 5px 12px; border-radius: 999px;
+  background: var(--bg-accent); color: var(--accent-ink); border: 1px solid #cdeced;
+}
+.pill.muted { background: var(--bg-alt); color: var(--muted); border-color: var(--border); }
+
+@media (max-width: 880px) {
+  .charts-grid { grid-template-columns: 1fr; }
+  .roadmap-strip { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .donut-row { flex-direction: column; align-items: flex-start; }
+  .roadmap-strip { grid-template-columns: 1fr; }
+}
+

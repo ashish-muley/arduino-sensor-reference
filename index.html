@@ -8,10 +8,10 @@ title: Home
   <div class="container">
     <span class="hero-eyebrow"><span class="dot"></span> Actively growing · Open source · MIT</span>
     <h1>The friendly reference for <span class="accent">Arduino &amp; IoT</span> sensors</h1>
-    <p class="lead">Wiring diagrams, working code, datasheets, and a step-by-step learning path — for Arduino, ESP32 &amp; ESP8266. Built so even a complete beginner can go from a blinking LED to a connected IoT project.</p>
+    <p class="lead">Wiring diagrams, working code, datasheets, and a step-by-step learning path — for Arduino, ESP32 &amp; ESP8266. One scrolling page covering everything in this repository.</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ '/Sensors/' | relative_url }}">Explore Sensors</a>
-      <a class="btn btn-ghost" href="{{ '/Roadmap.html' | relative_url }}">Start the Roadmap</a>
+      <a class="btn btn-primary" href="#sensors">Explore Sensors</a>
+      <a class="btn btn-ghost" href="#roadmap">See the Roadmap</a>
       <a class="btn btn-ghost" href="https://github.com/ashish-muley/arduino-sensor-reference" target="_blank" rel="noopener">View on GitHub ↗</a>
     </div>
 
@@ -41,8 +41,109 @@ title: Home
   </div>
 </section>
 
-<!-- ===== SENSORS ===== -->
+<!-- ===== CHARTS — Repository at a glance ===== -->
 <section class="alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">At a glance</span>
+      <h2>What's actually in this repository</h2>
+      <p>Real counts pulled straight from the repo's own folders — not illustrative placeholders.</p>
+    </div>
+
+    <div class="charts-grid">
+
+      <!-- Donut: Sensors by Category -->
+      <div class="chart-card">
+        <h3>Sensors by Category</h3>
+        <p class="chart-sub">12 documented sensors, by type</p>
+        <div class="donut-row">
+          <svg class="donut-svg" width="150" height="150" viewBox="0 0 180 180">
+            <g transform="rotate(-90 90 90)">
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#eef1f4" stroke-width="28"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#00979D" stroke-width="28" stroke-dasharray="146.61 293.22" stroke-dashoffset="0"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#0f766e" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-146.61"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#14b8a6" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-183.26"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#38bdf8" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-219.91"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#6366f1" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-256.56"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#f59e0b" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-293.22"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#ef4444" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-329.87"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#a855f7" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-366.52"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#64748b" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-403.17"/>
+            </g>
+            <text x="90" y="86" text-anchor="middle" class="donut-center-num">12</text>
+            <text x="90" y="102" text-anchor="middle" class="donut-center-label">SENSORS</text>
+          </svg>
+          <ul class="legend">
+            <li><span class="dot" style="background:#00979D"></span><span class="lname">Temperature</span><span class="lval">4</span></li>
+            <li><span class="dot" style="background:#0f766e"></span><span class="lname">IMU</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#14b8a6"></span><span class="lname">Pressure</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#38bdf8"></span><span class="lname">Distance</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#6366f1"></span><span class="lname">Motion</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#f59e0b"></span><span class="lname">Light</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#ef4444"></span><span class="lname">Gas</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#a855f7"></span><span class="lname">RFID</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#64748b"></span><span class="lname">Display</span><span class="lval">1</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Donut: Sensors by Interface -->
+      <div class="chart-card">
+        <h3>Sensors by Interface</h3>
+        <p class="chart-sub">How each sensor talks to the MCU</p>
+        <div class="donut-row">
+          <svg class="donut-svg" width="150" height="150" viewBox="0 0 180 180">
+            <g transform="rotate(-90 90 90)">
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#eef1f4" stroke-width="28"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#00979D" stroke-width="28" stroke-dasharray="146.61 293.22" stroke-dashoffset="0"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#38bdf8" stroke-width="28" stroke-dasharray="109.96 329.87" stroke-dashoffset="-146.61"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#6366f1" stroke-width="28" stroke-dasharray="109.96 329.87" stroke-dashoffset="-256.56"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#f59e0b" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-366.52"/>
+              <circle cx="90" cy="90" r="70" fill="none" stroke="#a855f7" stroke-width="28" stroke-dasharray="36.65 403.17" stroke-dashoffset="-403.17"/>
+            </g>
+            <text x="90" y="86" text-anchor="middle" class="donut-center-num">12</text>
+            <text x="90" y="102" text-anchor="middle" class="donut-center-label">SENSORS</text>
+          </svg>
+          <ul class="legend">
+            <li><span class="dot" style="background:#00979D"></span><span class="lname">Digital</span><span class="lval">4</span></li>
+            <li><span class="dot" style="background:#38bdf8"></span><span class="lname">Analog</span><span class="lval">3</span></li>
+            <li><span class="dot" style="background:#6366f1"></span><span class="lname">I²C</span><span class="lval">3</span></li>
+            <li><span class="dot" style="background:#f59e0b"></span><span class="lname">1-Wire</span><span class="lval">1</span></li>
+            <li><span class="dot" style="background:#a855f7"></span><span class="lname">SPI</span><span class="lval">1</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bar chart: Repository composition -->
+      <div class="chart-card">
+        <h3>Repository Composition</h3>
+        <p class="chart-sub">Content items per area (scaled to the largest)</p>
+        <div class="barlist">
+          <div class="barlist-row">
+            <div class="barlist-top"><span class="bname">Component-Reference parts</span><span class="bval">40</span></div>
+            <div class="barlist-track"><div class="barlist-fill" style="width:100%"></div></div>
+          </div>
+          <div class="barlist-row">
+            <div class="barlist-top"><span class="bname">Documented sensors</span><span class="bval">12</span></div>
+            <div class="barlist-track"><div class="barlist-fill" style="width:30%"></div></div>
+          </div>
+          <div class="barlist-row">
+            <div class="barlist-top"><span class="bname">Microcontroller boards</span><span class="bval">5</span></div>
+            <div class="barlist-track"><div class="barlist-fill" style="width:12.5%"></div></div>
+          </div>
+          <div class="barlist-row">
+            <div class="barlist-top"><span class="bname">Communication protocols</span><span class="bval">4</span></div>
+            <div class="barlist-track"><div class="barlist-fill" style="width:10%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SENSORS ===== -->
+<section id="sensors">
   <div class="container">
     <div class="section-head center">
       <span class="kicker">Sensors</span>
@@ -116,7 +217,7 @@ title: Home
 </section>
 
 <!-- ===== MICROCONTROLLERS ===== -->
-<section>
+<section class="alt" id="boards">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Microcontrollers</span>
@@ -135,7 +236,7 @@ title: Home
 </section>
 
 <!-- ===== PROTOCOLS ===== -->
-<section class="alt">
+<section id="protocols">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Communication</span>
@@ -151,8 +252,49 @@ title: Home
   </div>
 </section>
 
+<!-- ===== ROADMAP ===== -->
+<section class="alt" id="roadmap">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">Learning Roadmap</span>
+      <h2>A staged path, not a pile of folders</h2>
+      <p>Each stage builds on the last. Skipping ahead usually means more time debugging wiring than learning anything.</p>
+    </div>
+    <div class="roadmap-strip">
+      <div class="roadmap-step">
+        <div class="step-num">1</div>
+        <h4>Arduino Basics</h4>
+        <p>Digital I/O, PWM, analog input, Serial Monitor. Blink LED on real hardware.</p>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-num">2</div>
+        <h4>Basic Sensors</h4>
+        <p>LDR, LM35, DHT11, HC-SR04, PIR — cheap, forgiving, all documented.</p>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-num">3</div>
+        <h4>Communication</h4>
+        <p>UART, I²C, SPI — the protocols that unlock every sensor beyond the basics.</p>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-num">4</div>
+        <h4>Intermediate Sensors</h4>
+        <p>MPU6050, BMP280, RC522 — motion tracking, environment, authentication.</p>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-num">5</div>
+        <h4>ESP32 &amp; IoT</h4>
+        <p>WiFi, BLE, OTA updates, MQTT — connect a sensor to the internet.</p>
+      </div>
+    </div>
+    <div class="hero-cta" style="margin-top:28px; justify-content:center;">
+      <a class="btn btn-primary" href="{{ '/Roadmap.html' | relative_url }}">Open the Full Roadmap</a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== COMPONENT REFERENCE CALLOUT ===== -->
-<section>
+<section id="components">
   <div class="container">
     <div class="callout">
       <div>
@@ -165,28 +307,32 @@ title: Home
 </section>
 
 <!-- ===== PROJECTS ===== -->
-<section class="alt">
+<section class="alt" id="projects">
   <div class="container">
     <div class="section-head center">
       <span class="kicker">Projects</span>
       <h2>Put the pieces together</h2>
       <p>Combined builds organized by difficulty — from a night lamp to a full IoT home-automation dashboard.</p>
+      <div class="pill-row" style="justify-content:center;">
+        <span class="pill">11 projects planned</span>
+        <span class="pill muted">Built &amp; tested as sensors graduate from the roadmap above</span>
+      </div>
     </div>
     <div class="grid cols-3">
       <div class="card">
-        <div class="icon">🟢</div><span class="badge">Beginner</span>
+        <div class="icon">🟢</div><span class="badge">Beginner · 4 planned</span>
         <h3>Starter Builds</h3>
         <p>Automatic Night Lamp · Temperature Monitor · Parking Distance Sensor · Motion Alarm.</p>
         <a class="card-link" href="{{ '/Projects/' | relative_url }}">See projects</a>
       </div>
       <div class="card">
-        <div class="icon">🟡</div><span class="badge">Intermediate</span>
+        <div class="icon">🟡</div><span class="badge">Intermediate · 3 planned</span>
         <h3>Combined Systems</h3>
         <p>Smart Weather Station · RFID Attendance · Gesture Controlled Light.</p>
         <a class="card-link" href="{{ '/Projects/' | relative_url }}">See projects</a>
       </div>
       <div class="card">
-        <div class="icon">🔴</div><span class="badge">Advanced</span>
+        <div class="icon">🔴</div><span class="badge">Advanced · 4 planned</span>
         <h3>IoT &amp; Industrial</h3>
         <p>IoT Home Automation · Smart Irrigation · Vehicle Tracking · Monitoring Dashboard.</p>
         <a class="card-link" href="{{ '/Projects/' | relative_url }}">See projects</a>
